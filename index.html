@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Politécnico Santa Lúcia | Inovação e Excelência</title>
+    <meta name="description" content="Portal oficial do Instituto Politécnico de Administração e Serviços Santa Lúcia. Cursos de Informática de Gestão, Contabilidade e Finanças. Inscreva-se já!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAV BAR PRINCIPAL -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                <i class="fas fa-university"></i>
+                <span class="logo-text">IP Santa Lúcia</span>
+            </a>
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="#home" id="link-home">Início</a></li>
+                <li><a href="#instituto" id="link-instituto">O Instituto</a></li>
+                <li><a href="#cursos" id="link-cursos">Cursos</a></li>
+                <li><a href="#eventos" id="link-eventos">Eventos</a></li>
+                <li><a href="#contacto" id="link-contacto">Contactos</a></li>
+                <li><a href="#portal-aluno-section" class="btn-portal" id="link-portal-cta"><i class="fas fa-user-lock"></i> Portal do Aluno</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        
+        <!-- HERO SLIDER SECTION -->
+        <section id="home" class="hero-slider" id="hero-slider-section">
+            <div class="slider-container" id="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('assets/hero.png') center/cover;">
+                    <div class="slide-content">
+                        <span class="badge fade-in-up">Instituto Politécnico Santa Lúcia</span>
+                        <h1 class="fade-in-up">Lideramos o Caminho da Inovação Académica</h1>
+                        <p class="fade-in-up">Formamos profissionais de excelência nas áreas de Tecnologia, Gestão e Finanças com rigor, ética e foco no mercado.</p>
+                        <div class="hero-buttons fade-in-up">
+                            <button class="btn btn-primary btn-abrir-candidatura" id="hero-btn-inscricoes">Inscrições Online <i class="fas fa-paper-plane"></i></button>
+                            <a href="#cursos" class="btn btn-secondary" id="hero-btn-cursos">Conhecer Cursos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), url('assets/hero.png') center/cover;">
+                    <div class="slide-content">
+                        <span class="badge">Inscrições Abertas 2026/2027</span>
+                        <h1>Garanta a sua vaga no Instituto Santa Lúcia</h1>
+                        <p>Submeta a sua candidatura online hoje mesmo. Processo 100% digital com análise célere de documentos.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-abrir-candidatura" id="hero-btn-inscricoes-2">Iniciar Inscrição <i class="fas fa-arrow-right"></i></button>
+                            <a href="#instituto" class="btn btn-secondary">Certificações e Corpo Docente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background: linear-gradient(rgba(43, 108, 176, 0.85), rgba(43, 108, 176, 0.85)), url('assets/hero.png') center/cover;">
+                    <div class="slide-content">
+                        <span class="badge">Ciência & Investigação</span>
+                        <h1>Produção Científica de Impacto</h1>
+                        <p>Eventos Científicos e workshops de fomento à investigação. Submeta o seu resumo e publique connosco.</p>
+                        <div class="hero-buttons">
+                            <a href="#eventos" class="btn btn-primary" id="hero-btn-eventos-ver">Ver Agenda Científica</a>
+                            <a href="#portal-aluno-section" class="btn btn-secondary">Portal do Aluno</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controlos do Slider -->
+            <button class="slider-btn prev" id="slider-prev" aria-label="Slide Anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="slider-next" aria-label="Próximo Slide"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="slider-dots" id="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE ACESSOS RÁPIDOS -->
+        <section class="quick-access">
+            <div class="quick-access-grid">
+                <div class="quick-card btn-abrir-candidatura" id="qa-inscricoes">
+                    <div class="quick-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Candidaturas Online</h3>
+                    <p>Inscreva-se num dos nossos cursos e anexe os documentos necessários.</p>
+                </div>
+                <a href="#cursos" class="quick-card" id="qa-cursos">
+                    <div class="quick-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Oferta Formativa</h3>
+                    <p>Explore os cursos técnicos médios do IIº Ciclo do Ensino Secundário em Informática de Gestão, Finanças e Contabilidade.</p>
+                </a>
+                <a href="#eventos" class="quick-card" id="qa-eventos">
+                    <div class="quick-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Eventos Académicos</h3>
+                    <p>Acompanhe debates, workshops culturais e simpósios de investigação.</p>
+                </a>
+                <a href="#portal-aluno-section" class="quick-card" id="qa-portal">
+                    <div class="quick-icon"><i class="fas fa-user-lock"></i></div>
+                    <h3>Área Reservada</h3>
+                    <p>Acesso seguro a notas, propinas, assiduidade e matrículas de cadeiras.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECÇÃO O INSTITUTO -->
+        <section id="instituto" class="about-section">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text slide-in-left">
+                        <span class="section-subtitle">Quem Somos</span>
+                        <h2>Instituto Politécnico Santa Lúcia</h2>
+                        <p>Fundado com a visão de impulsionar o desenvolvimento de Angola através do ensino técnico e científico de alto nível, o Instituto Politécnico de Administração e Serviços Santa Lúcia é uma referência no Ensino Médio Técnico-Profissional (IIº Ciclo).</p>
+                        <p>Aliamos o rigor teórico à prática de mercado, proporcionando aos alunos laboratórios equipados e um corpo docente com vasta experiência profissional e académica.</p>
+                        
+                        <div class="accordion" id="instituto-accordion">
+                            <div class="accordion-item active">
+                                <div class="accordion-header" id="acc-header-missao">
+                                    <h3>Nossa Missão & Valores</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nossa missão é qualificar capital humano capaz de inovar e gerir sistemas complexos de administração, finanças e tecnologia. Valorizamos a integridade académica, a dedicação social, a inovação contínua e o pensamento analítico.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="acc-header-cert">
+                                    <h3>Certificações e Acreditação</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Todos os nossos cursos são plenamente credenciados pelo Ministério da Educação (MED) de Angola, garantindo diplomas oficiais válidos nacionalmente e alinhados com o Plano de Desenvolvimento do Ensino Técnico-Profissional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats slide-in-right">
+                        <div class="stat-card glassmorphism">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>+25</h3>
+                            <p>Docentes Especialistas</p>
+                        </div>
+                        <div class="stat-card glassmorphism">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>95%</h3>
+                            <p>Taxa de Empregabilidade</p>
+                        </div>
+                        <div class="stat-card glassmorphism">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>3</h3>
+                            <p>Laboratórios Tecnológicos</p>
+                        </div>
+                        <div class="stat-card glassmorphism">
+                            <i class="fas fa-award"></i>
+                            <h3>100%</h3>
+                            <p>Cursos Credenciados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CORPO DOCENTE SUMARIZADO -->
+                <div class="docentes-section">
+                    <h3 class="subsection-title">Corpo Docente Destacado</h3>
+                    <div class="docentes-grid">
+                        <div class="docente-card">
+                            <div class="docente-img">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Dr. Cândido Mateus</h4>
+                            <span class="docente-cargo"><Canvas>Engº Cândido Mateus</Canvas> Coordenador & Prof. de Redes</span>
+                            <p>Mestre em Engenharia de Software, com foco em segurança de redes e arquitetura web escalável.</p>
+                        </div>
+                        <div class="docente-card">
+                            <div class="docente-img">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <h4>Lic. Nagasaki Prado</h4>
+                            <span class="docente-cargo">Diretora pedagógica</span>
+                            <p>Licenciada em Economia Pública com vasta experiência em gestão e auditoria no setor bancário angolano.</p>
+                        </div>
+                        <div class="docente-card">
+                            <div class="docente-img">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <h4>Msc. Gabriel Chibinga</h4>
+                            <span class="docente-cargo">Diretor Geral</span>
+                            <p>Consultor sénior de contabilidade e auditoria, especialista em sistemas integrados de gestão empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE CURSOS -->
+        <section id="cursos" class="courses-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Oferta Formativa</span>
+                    <h2>Nossos Cursos Técnicos Médios (IIº Ciclo)</h2>
+                    <p>Programas académicos inovadores desenhados para responder às exigências do mercado corporativo moderno.</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <!-- Curso 1 -->
+                    <div class="course-card-custom" id="course-card-inf">
+                        <div class="course-img-header" style="background: linear-gradient(135deg, rgba(26, 54, 93, 0.95), rgba(43, 108, 176, 0.95));">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="course-body">
+                            <h3>Informática de Gestão</h3>
+                            <p>Capacita os estudantes a projetar, implementar e gerir sistemas de informação, aliando o desenvolvimento de software e bases de dados à gestão estratégica corporativa.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 4 Anos (12 Trimestres)</span>
+                                <span><i class="far fa-sun"></i> Diurno</span>
+                            </div>
+                            <button class="btn btn-outline btn-ver-detalhes-curso" data-curso="informática de gestão">Visualizar Plano <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Curso 2 -->
+                    <div class="course-card-custom" id="course-card-cont">
+                        <div class="course-img-header" style="background: linear-gradient(135deg, rgba(43, 108, 176, 0.95), rgba(237, 137, 54, 0.95));">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="course-body">
+                            <h3>Contabilidade e Gestão</h3>
+                            <p>Prepara profissionais para atuar na contabilidade corporativa, auditoria fiscal, análise de custos e liderança empresarial com domínio de normas internacionais.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 4 Anos (12 Trimestres)</span>
+                                <span><i class="far fa-sun"></i> Diurno</span>
+                            </div>
+                            <button class="btn btn-outline btn-ver-detalhes-curso" data-curso="contabilidade e gestão">Visualizar Plano <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="course-card-custom" id="course-card-fin">
+                        <div class="course-img-header" style="background: linear-gradient(135deg, rgba(237, 137, 54, 0.95), rgba(221, 107, 32, 0.95));">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="course-body">
+                            <h3>Finanças</h3>
+                            <p>Especialização voltada para mercados financeiros, análise de carteira, finanças corporativas avançadas, gestão de riscos e técnicas de investimento.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 4 Anos (12 Trimestres)</span>
+                                <span><i class="far fa-sun"></i> Diurno</span>
+                            </div>
+                            <button class="btn btn-outline btn-ver-detalhes-curso" data-curso="finanças">Visualizar Plano <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE EVENTOS -->
+        <section id="eventos" class="events-section">
+            <div class="section-container">
+                <div class="events-layout-header">
+                    <div class="section-header-left">
+                        <span class="section-subtitle">Agenda do Instituto</span>
+                        <h2>Eventos & Atividades Académicas</h2>
+                        <p>Mantenha-se atualizado com as iniciativas culturais e debates científicos que movimentam a nossa comunidade académica.</p>
+                    </div>
+                    <!-- Painel de Filtros -->
+                    <div class="events-filter-bar" id="events-filter-bar">
+                        <button class="filter-btn active" data-filter="todos" id="filter-btn-all">Todos</button>
+                        <button class="filter-btn" data-filter="cultural" id="filter-btn-cultural"><i class="fas fa-masks-theater"></i> Culturais</button>
+                        <button class="filter-btn" data-filter="cientifico" id="filter-btn-scientific"><i class="fas fa-microscope"></i> Científicos</button>
+                        <button class="filter-btn" data-filter="breve" id="filter-btn-upcoming"><i class="far fa-clock"></i> Próximos</button>
+                    </div>
+                </div>
+
+                <div class="events-container-wrapper">
+                    <!-- Grelha de Eventos -->
+                    <div class="events-grid" id="events-grid-container">
+                        <!-- Evento 1 (Científico) -->
+                        <div class="event-card cientifico" data-category="cientifico" data-status="breve">
+                            <div class="event-badge cientifico-badge"><i class="fas fa-atom"></i> Científico</div>
+                            <div class="event-content">
+                                <div class="event-date-box">
+                                    <span class="day">22</span>
+                                    <span class="month">JUN</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Simpósio de Tecnologias de Informação e Gestão</h3>
+                                    <p class="event-meta"><i class="far fa-clock"></i> 09:00 - 13:00 | <i class="fas fa-map-marker-alt"></i> Auditório Principal</p>
+                                    <p class="event-desc">Ciclo de debates e palestras com convidados internacionais sobre inteligência artificial aplicada à contabilidade e processos de gestão empresarial.</p>
+                                    <div class="event-speakers">
+                                        <strong>Oradores:</strong> Eng. Cândido Mateus, Lic. Nagaskai Prado, Prof. Convidado de Portugal.
+                                    </div>
+                                    <div class="scientific-actions">
+                                        <a href="#" class="btn-download-edital" id="btn-down-edital-1"><i class="fas fa-file-pdf"></i> Descarregar Edital</a>
+                                        <button class="btn-submit-abstract" data-event-title="Simpósio de Tecnologias de Informação e Gestão"><i class="fas fa-upload"></i> Submeter Artigo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evento 2 (Cultural) -->
+                        <div class="event-card cultural" data-category="cultural" data-status="breve">
+                            <div class="event-badge cultural-badge"><i class="fas fa-guitar"></i> Cultural</div>
+                            <div class="event-content">
+                                <div class="event-date-box">
+                                    <span class="day">27</span>
+                                    <span class="month">JUN</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Festival Multicultural de Inverno</h3>
+                                    <p class="event-meta"><i class="far fa-clock"></i> 14:00 - 19:30 | <i class="fas fa-map-marker-alt"></i> Pátio das Artes</p>
+                                    <p class="event-desc">Festa da comunidade académica contendo mostra de gastronomia nacional, concurso de poesia, workshops de dança e apresentações teatrais preparadas pelos próprios alunos.</p>
+                                    <div class="event-speakers">
+                                        <strong>Organizadores:</strong> Associação de Estudantes do IP Santa Lúcia.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evento 3 (Científico) -->
+                        <div class="event-card cientifico" data-category="cientifico" data-status="passado">
+                            <div class="event-badge cientifico-badge"><i class="fas fa-atom"></i> Científico</div>
+                            <div class="event-content">
+                                <div class="event-date-box">
+                                    <span class="day">10</span>
+                                    <span class="month">MAI</span>
+                                </div>
+                                <div class="event-details">
+                                    <h3>Conferência de Finanças Públicas e Tributação</h3>
+                                    <p class="event-meta"><i class="far fa-clock"></i> 08:30 - 12:00 | <i class="fas fa-map-marker-alt"></i> Sala de Conferências C1</p>
+                                    <p class="event-desc">Painel técnico de debate sobre as reformas fiscais e o impacto da tributação de capitais de investimentos externos no contexto angolano.</p>
+                                    <div class="event-speakers">
+                                        <strong>Oradores:</strong> Dr. João Neto Kassoma, Dra. Teresa de Carvalho.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CMS EVENTOS SIMULADO (Apenas Administração) -->
+                    <div class="cms-event-panel" id="cms-event-panel-id">
+                        <div class="cms-header">
+                            <h3><i class="fas fa-tools"></i> CMS - Painel de Eventos (Secretaria)</h3>
+                            <p>Publique novos eventos na agenda pública do site em tempo real.</p>
+                        </div>
+                        <form id="form-criar-evento" class="cms-form">
+                            <div class="form-group">
+                                <label for="ev-titulo">Título do Evento *</label>
+                                <input type="text" id="ev-titulo" required placeholder="Ex: Workshop de Gestão de Riscos">
+                            </div>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="ev-categoria">Categoria *</label>
+                                    <select id="ev-categoria" required>
+                                        <option value="cultural">Cultural</option>
+                                        <option value="cientifico">Científico</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ev-data">Data *</label>
+                                    <input type="date" id="ev-data" required>
+                                </div>
+                            </div>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="ev-hora">Hora de Início *</label>
+                                    <input type="time" id="ev-hora" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ev-local">Local *</label>
+                                    <input type="text" id="ev-local" required placeholder="Ex: Anfiteatro B">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ev-oradores">Oradores / Organizadores</label>
+                                <input type="text" id="ev-oradores" placeholder="Ex: Dr. Antunes da Silva">
+                            </div>
+                            <div class="form-group">
+                                <label for="ev-desc">Breve Descrição *</label>
+                                <textarea id="ev-desc" rows="3" required placeholder="Escreva um breve resumo informativo sobre o evento..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-publicar-evento">Publicar Evento <i class="fas fa-plus"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO PORTAL DO ALUNO (SIMULADOR DE ÁREA RESERVADA) -->
+        <section id="portal-aluno-section" class="portal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Área de Serviços</span>
+                    <h2>Portal do Aluno & Sistema de Gestão</h2>
+                    <p>Espaço simulado de ativação de conta, login e consulta de registos académicos. Teste os fluxos da secretaria e do aluno abaixo.</p>
+                </div>
+                
+                <div class="portal-workspace glassmorphism">
+                    <!-- Navegação do Workspace do Simulador -->
+                    <div class="workspace-tabs" id="workspace-tabs-control">
+                        <button class="w-tab active" data-tab="tab-secretaria" id="tab-btn-sec"><i class="fas fa-user-shield"></i> 1. Secretaria (Cadastro)</button>
+                        <button class="w-tab" data-tab="tab-email" id="tab-btn-mail"><i class="fas fa-envelope-open-text"></i> 2. Caixa de Entrada (Email)</button>
+                        <button class="w-tab" data-tab="tab-login" id="tab-btn-log"><i class="fas fa-user-lock"></i> 3. Login / Dashboard Aluno</button>
+                    </div>
+
+                    <!-- Conteúdo das Abas -->
+                    <div class="workspace-content-wrapper">
+                        
+                        <!-- TAB 1: SECRETARIA (CADASTRO PRÉVIO) -->
+                        <div class="w-content active" id="tab-secretaria">
+                            <div class="w-layout">
+                                <div class="w-info">
+                                    <h3>Cadastrar Aluno Previamente</h3>
+                                    <p>Os alunos do IP Santa Lúcia não se podem registar sozinhos. Simule a secretaria cadastrando um estudante na base de dados académica.</p>
+                                    <div class="alert-box note-alert">
+                                        <i class="fas fa-info-circle"></i>
+                                        <span>Ao clicar em "Cadastrar Aluno", a base de dados cria o registo em estado pendente de ativação e envia um e-mail com token JWT temporário.</span>
+                                    </div>
+                                </div>
+                                <form id="form-secretaria-cadastro" class="w-form">
+                                    <div class="form-group">
+                                        <label for="sec-nome">Nome Completo do Aluno *</label>
+                                        <input type="text" id="sec-nome" required placeholder="Ex: Manuel Francisco Bento">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sec-email">E-mail Pessoal *</label>
+                                        <input type="email" id="sec-email" required placeholder="Ex: manuel.bento@gmail.com">
+                                    </div>
+                                    <div class="form-group-row">
+                                        <div class="form-group">
+                                            <label for="sec-numero">Nº de Estudante (ID) *</label>
+                                            <input type="text" id="sec-numero" required placeholder="Ex: 20261045">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sec-curso">Curso Associado *</label>
+                                            <select id="sec-curso" required>
+                                                <option value="Informática de Gestão">Informática de Gestão</option>
+                                                <option value="Contabilidade e Gestão">Contabilidade e Gestão</option>
+                                                <option value="Finanças">Finanças</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="btn-sec-cadastrar">Cadastrar Aluno <i class="fas fa-user-plus"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: SIMULADOR DE CAIXA DE EMAIL -->
+                        <div class="w-content" id="tab-email">
+                            <div class="email-inbox-simulator">
+                                <div class="inbox-sidebar">
+                                    <h4><i class="fas fa-inbox"></i> Caixa de Entrada</h4>
+                                    <div class="inbox-list" id="inbox-list-emails">
+                                        <div class="empty-inbox" id="empty-inbox-msg">Nenhum e-mail recebido. Vá ao passo 1 e cadastre um aluno.</div>
+                                    </div>
+                                </div>
+                                <div class="email-viewer" id="email-viewer-content">
+                                    <div class="email-view-placeholder">
+                                        <i class="far fa-envelope-open"></i>
+                                        <p>Selecione um e-mail da lista para ler o conteúdo e aceder ao link de ativação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: LOGIN / DASHBOARD DO ALUNO -->
+                        <div class="w-content" id="tab-login">
+                            
+                            <!-- ECRÃ DE LOGIN DO PORTAL -->
+                            <div class="portal-login-screen" id="portal-login-screen">
+                                <div class="login-box">
+                                    <div class="login-logo">
+                                        <i class="fas fa-university"></i>
+                                        <h3>Área Reservada</h3>
+                                        <p>Faça login com o seu Nº de Estudante ou E-mail e Palavra-passe.</p>
+                                    </div>
+                                    
+                                    <div class="alert-box success-alert" id="login-top-alert" style="display:none;"></div>
+                                    
+                                    <form id="form-portal-login">
+                                        <div class="form-group">
+                                            <label for="log-identificador">Nº de Estudante ou E-mail</label>
+                                            <input type="text" id="log-identificador" required placeholder="Ex: 20261045 ou email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="log-password">Palavra-passe</label>
+                                            <div class="password-input-wrapper">
+                                                <input type="password" id="log-password" required placeholder="Sua palavra-passe">
+                                                <button type="button" class="btn-toggle-password" id="btn-toggle-pw" aria-label="Mostrar Palavra-passe"><i class="far fa-eye"></i></button>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block" id="btn-sub-login">Entrar no Portal <i class="fas fa-sign-in-alt"></i></button>
+                                    </form>
+                                    
+                                    <div class="login-footer">
+                                        <p><i class="fas fa-shield-alt"></i> Ligação cifrada e segura (Simulado SSL/JWT)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DASHBOARD DO ALUNO (INICIALMENTE OCULTO) -->
+                            <div class="portal-dashboard" id="portal-dashboard" style="display:none;">
+                                <div class="dashboard-header">
+                                    <div class="student-profile-summary">
+                                        <div class="profile-avatar">
+                                            <i class="fas fa-user-graduate"></i>
+                                        </div>
+                                        <div>
+                                            <h3 id="dash-student-name">Manuel Francisco Bento</h3>
+                                            <p id="dash-student-meta">Nº de Estudante: 20261045 | Curso: Informática de Gestão</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-danger btn-sm" id="btn-portal-logout"><i class="fas fa-sign-out-alt"></i> Sair</button>
+                                </div>
+
+                                <div class="dashboard-grid">
+                                    
+                                    <!-- Bloco 1: Notas e Cadeiras -->
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <h4><i class="fas fa-graduation-cap"></i> Notas Finais (1º Semestre)</h4>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="dash-table" id="table-grades">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Cadeira / Disciplina</th>
+                                                        <th>Nota Final</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Inserido dinamicamente por JS -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloco 2: Assiduidade -->
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <h4><i class="fas fa-user-check"></i> Faltas e Assiduidade</h4>
+                                        </div>
+                                        <div class="attendance-summary" id="attendance-summary-list">
+                                            <!-- Inserido dinamicamente por JS -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloco 3: Pagamento de Propinas -->
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <h4><i class="fas fa-file-invoice-dollar"></i> Propinas Académicas</h4>
+                                        </div>
+                                        <div class="tuition-list" id="tuition-list-container">
+                                            <!-- Inserido dinamicamente por JS -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloco 4: Matrículas de Cadeiras -->
+                                    <div class="dash-card">
+                                        <div class="dash-card-header">
+                                            <h4><i class="fas fa-layer-group"></i> Matrículas de Cadeiras (2º Trimestre)</h4>
+                                        </div>
+                                        <p class="dash-desc">Confirmação de matrículas para as cadeiras vigentes no próximo trimestre:</p>
+                                        <ul class="matricula-list" id="matriculas-list-container">
+                                            <!-- Inserido dinamicamente por JS -->
+                                        </ul>
+                                        <div class="matriculas-status-badge">
+                                            <i class="fas fa-check-circle"></i> Matrícula Ativa no Ano Letivo 2026
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE CONTACTOS -->
+        <section id="contacto" class="contact-section">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-info-block">
+                        <span class="section-subtitle">Localização & Canais</span>
+                        <h2>Fale com a Secretaria</h2>
+                        <p>Tem dúvidas sobre as inscrições online ou necessita de ajuda no portal do aluno? A nossa equipa de apoio académico está disponível para ajudar.</p>
+                        
+                        <ul class="contact-info-list">
+                            <li>
+                                <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Telefone Principal</h4>
+                                    <p><a href="tel:+244944405037">+244 944405037</a></p>
+                                    <p class="sub">WhatsApp / Chamadas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Endereço de E-mail</h4>
+                                    <p><a href="mailto:candidoarmando@live.com.pt">candidoarmando@live.com.pt</a></p>
+                                    <p class="sub">Respostas em até 24h</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ci-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div>
+                                    <h4>Localização Física</h4>
+                                    <p>Av. Principal de Santa Lúcia, Luanda, Angola</p>
+                                    <p class="sub">Próximo ao Centro de Convenções</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-block glassmorphism">
+                        <h3>Enviar Mensagem Direta</h3>
+                        <form id="form-contacto-duvida">
+                            <div class="form-group">
+                                <label for="cnt-nome">Nome Completo *</label>
+                                <input type="text" id="cnt-nome" required placeholder="Digite o seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="cnt-email">E-mail de Contacto *</label>
+                                <input type="email" id="cnt-email" required placeholder="seuemail@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="cnt-mensagem">Mensagem / Dúvida *</label>
+                                <textarea id="cnt-mensagem" rows="4" required placeholder="Escreva a sua mensagem em detalhe..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-env-mensagem">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fas fa-university"></i>
+                    <span class="logo-text">IP Santa Lúcia</span>
+                </a>
+                <p>Educação profissional de nível médio técnico (IIº Ciclo do Ensino Secundário) focada no desenvolvimento tecnológico e administrativo sustentável em Angola.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#instituto">Sobre o Instituto</a></li>
+                    <li><a href="#cursos">Cursos Disponíveis</a></li>
+                    <li><a href="#eventos">Eventos Académicos</a></li>
+                    <li><a href="#contacto">Contactos de Apoio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Nossos Cursos</h3>
+                <ul>
+                    <li><a href="#cursos">Informática de Gestão</a></li>
+                    <li><a href="#cursos">Contabilidade e Gestão</a></li>
+                    <li><a href="#cursos">Finanças</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contactos Úteis</h3>
+                <p><i class="fas fa-phone-alt"></i> +244 944405037</p>
+                <p><i class="fas fa-envelope"></i> secretaria@ipsantalucia.edu.ao</p>
+                <p><i class="fas fa-clock"></i> Seg - Sex: 08:00 - 17:30</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Instituto Politécnico de Administração e Serviços Santa Lúcia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE INSCRIÇÕES ONLINE (PORTAL DE CANDIDATURAS) -->
+    <div id="modal-inscricoes-candidatura" class="modal-candidatura">
+        <div class="modal-content-custom glassmorphism">
+            <button class="close-modal-btn" id="btn-fechar-modal-candidatura" aria-label="Fechar Modal">&times;</button>
+            <div class="modal-header-custom">
+                <h2>Portal de Inscrições Online</h2>
+                <p>Preencha os seus dados pessoais, escolha o curso e carregue os documentos de suporte obrigatórios.</p>
+            </div>
+            
+            <form id="form-candidatura-online" class="candidatura-online-form">
+                
+                <h3 class="form-section-title"><i class="fas fa-address-card"></i> 1. Dados Pessoais</h3>
+                <div class="form-row-custom">
+                    <div class="form-group-custom">
+                        <label for="cand-nome">Nome Completo *</label>
+                        <input type="text" id="cand-nome" required placeholder="Ex: Manuel da Silva Cassanga">
+                    </div>
+                    <div class="form-group-custom">
+                        <label for="cand-data-nascimento">Data de Nascimento *</label>
+                        <input type="date" id="cand-data-nascimento" required>
+                    </div>
+                </div>
+                <div class="form-row-custom">
+                    <div class="form-group-custom">
+                        <label for="cand-email">Endereço de E-mail *</label>
+                        <input type="email" id="cand-email" required placeholder="Ex: silva.cassanga@gmail.com">
+                    </div>
+                    <div class="form-group-custom">
+                        <label for="cand-telefone">Telefone de Contacto *</label>
+                        <input type="text" id="cand-telefone" required placeholder="Ex: +244 923 456 789">
+                    </div>
+                </div>
+                <div class="form-row-custom">
+                    <div class="form-group-custom">
+                        <label for="cand-bi">Número do B.I. ou Passaporte *</label>
+                        <input type="text" id="cand-bi" required placeholder="Ex: 001234567LA045">
+                    </div>
+                    <div class="form-group-custom">
+                        <label for="cand-escola">Escola de Proveniência (I Ciclo) *</label>
+                        <input type="text" id="cand-escola" required placeholder="Ex: Escola Secundária de Luanda">
+                    </div>
+                </div>
+                
+                <h3 class="form-section-title"><i class="fas fa-user-graduate"></i> 2. Curso Pretendido</h3>
+                <div class="form-row-custom">
+                    <div class="form-group-custom">
+                        <label for="cand-curso">Escolha o Curso *</label>
+                        <select id="cand-curso" required>
+                            <option value="">Selecione o curso...</option>
+                            <option value="Informática de Gestão">Informática de Gestão</option>
+                            <option value="Contabilidade e Gestão">Contabilidade e Gestão</option>
+                            <option value="Finanças">Finanças</option>
+                        </select>
+                    </div>
+                    <div class="form-group-custom">
+                        <label for="cand-media">Média de Conclusão (0 a 20) *</label>
+                        <input type="number" id="cand-media" min="10" max="20" step="0.1" required placeholder="Ex: 14.5">
+                    </div>
+                </div>
+
+                <h3 class="form-section-title"><i class="fas fa-file-upload"></i> 3. Documentos Obrigatórios (Uploads)</h3>
+                <div class="upload-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <span>São aceites ficheiros PDF, JPG e PNG de até 5MB por documento.</span>
+                </div>
+                
+                <div class="form-grid-uploads">
+                    <div class="file-upload-card" id="up-card-bi">
+                        <label for="file-bi">
+                            <i class="fas fa-id-card"></i>
+                            <strong>Bilhete de Identidade (B.I.) *</strong>
+                            <span>Selecionar PDF ou Imagem</span>
+                        </label>
+                        <input type="file" id="file-bi" accept=".pdf,image/*" required>
+                        <div class="file-status" id="status-bi">Nenhum ficheiro selecionado</div>
+                    </div>
+
+                    <div class="file-upload-card" id="up-card-certificado">
+                        <label for="file-certificado">
+                            <i class="fas fa-graduation-cap"></i>
+                            <strong>Certificado de Habilitações *</strong>
+                            <span>Selecionar PDF ou Imagem</span>
+                        </label>
+                        <input type="file" id="file-certificado" accept=".pdf,image/*" required>
+                        <div class="file-status" id="status-certificado">Nenhum ficheiro selecionado</div>
+                    </div>
+
+                    <div class="file-upload-card" id="up-card-medico">
+                        <label for="file-medico">
+                            <i class="fas fa-heartbeat"></i>
+                            <strong>Atestado Médico *</strong>
+                            <span>Selecionar PDF ou Imagem</span>
+                        </label>
+                        <input type="file" id="file-medico" accept=".pdf,image/*" required>
+                        <div class="file-status" id="status-medico">Nenhum ficheiro selecionado</div>
+                    </div>
+
+                    <div class="file-upload-card" id="up-card-foto">
+                        <label for="file-foto">
+                            <i class="fas fa-camera"></i>
+                            <strong>Fotografia Tipo Passe *</strong>
+                            <span>Selecionar Imagem</span>
+                        </label>
+                        <input type="file" id="file-foto" accept="image/*" required>
+                        <div class="file-status" id="status-foto">Nenhum ficheiro selecionado</div>
+                    </div>
+
+                    <div class="file-upload-card" id="up-card-pagamento">
+                        <label for="file-pagamento">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <strong>Comprovativo de Pagamento *</strong>
+                            <span>Selecionar PDF ou Imagem</span>
+                        </label>
+                        <input type="file" id="file-pagamento" accept=".pdf,image/*" required>
+                        <div class="file-status" id="status-pagamento">Nenhum ficheiro selecionado</div>
+                    </div>
+                </div>
+
+                <div class="form-consent">
+                    <input type="checkbox" id="cand-consent" required>
+                    <label for="cand-consent">Declaro que os dados fornecidos e os documentos anexados são autênticos e correspondem à verdade académica. *</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-enviar-candidatura-form">Submeter Candidatura <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL DE COMPROVATIVO DE CANDIDATURA (GERADO DINAMICAMENTE) -->
+    <div id="modal-comprovativo-candidatura" class="modal-comprovativo">
+        <div class="comprovativo-card" id="comprovativo-documento">
+            <button class="close-comprovativo-btn" id="btn-fechar-comprovativo" aria-label="Fechar Comprovativo">&times;</button>
+            
+            <div class="comprovativo-print-content">
+                <div class="comp-header">
+                    <i class="fas fa-university"></i>
+                    <h2>INSTITUTO POLITÉCNICO SANTA LÚCIA</h2>
+                    <p>Secretaria Geral - Sistema Integrado de Candidaturas Académicas</p>
+                </div>
+                
+                <div class="comp-title-bar">
+                    <h3>COMPROVATIVO DE CANDIDATURA ONLINE</h3>
+                    <span class="comp-number" id="comp-val-numero">CAND-2026-0000</span>
+                </div>
+
+                <div class="comp-details-grid">
+                    <div class="comp-col">
+                        <h4>Dados do Candidato:</h4>
+                        <p><strong>Nome:</strong> <span id="comp-val-nome">N/A</span></p>
+                        <p><strong>Documento de Identidade:</strong> <span id="comp-val-bi">N/A</span></p>
+                        <p><strong>Data de Nascimento:</strong> <span id="comp-val-nascimento">N/A</span></p>
+                        <p><strong>E-mail:</strong> <span id="comp-val-email">N/A</span></p>
+                        <p><strong>Telefone:</strong> <span id="comp-val-telefone">N/A</span></p>
+                    </div>
+                    <div class="comp-col">
+                        <h4>Dados do Curso e Processo:</h4>
+                        <p><strong>Curso Pretendido:</strong> <span id="comp-val-curso">N/A</span></p>
+                        <p><strong>Escola de Proveniência:</strong> <span id="comp-val-escola">N/A</span></p>
+                        <p><strong>Média do I Ciclo:</strong> <span id="comp-val-media">0.00</span> / 20</p>
+                        <p><strong>Ano Letivo:</strong> 2026 / 2027</p>
+                        <p><strong>Data de Submissão:</strong> <span id="comp-val-data">N/A</span></p>
+                    </div>
+                </div>
+
+                <div class="comp-files-table">
+                    <h4>Documentos Carregados e Associados:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de Documento</th>
+                                <th>Nome do Ficheiro</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Bilhete de Identidade</td><td id="comp-file-bi">N/A</td><td><span class="badge-status ok">Carregado</span></td></tr>
+                            <tr><td>Certificado de Habilitações</td><td id="comp-file-cert">N/A</td><td><span class="badge-status ok">Carregado</span></td></tr>
+                            <tr><td>Atestado Médico</td><td id="comp-file-med">N/A</td><td><span class="badge-status ok">Carregado</span></td></tr>
+                            <tr><td>Fotografia Tipo Passe</td><td id="comp-file-foto">N/A</td><td><span class="badge-status ok">Carregado</span></td></tr>
+                            <tr><td>Comprovativo de Pagamento</td><td id="comp-file-pag">N/A</td><td><span class="badge-status ok">Carregado</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="comp-receipt-footer">
+                    <div class="comp-barcode-area">
+                        <i class="fas fa-barcode"></i>
+                        <span id="barcode-text">CAND20260000000000</span>
+                    </div>
+                    <div class="comp-instructions">
+                        <p><strong>Instruções de Acompanhamento:</strong></p>
+                        <p>1. Guarde este documento em formato digital ou impresso.</p>
+                        <p>2. A secretaria irá validar os seus anexos. O resultado será enviado por e-mail.</p>
+                        <p>3. Utilize o número de inscrição <strong><span id="comp-val-numero-inst">CAND-2026-0000</span></strong> para consultas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comp-actions-panel">
+                <button class="btn btn-primary" id="btn-imprimir-comprovativo"><i class="fas fa-print"></i> Imprimir / Guardar PDF</button>
+                <button class="btn btn-secondary" id="btn-concluir-candidatura">Concluir Processo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE ATIVAÇÃO DE CONTA (SIMULADO A PARTIR DO LINK DE EMAIL) -->
+    <div id="modal-ativacao-conta" class="modal-ativacao">
+        <div class="modal-content-custom glassmorphism activation-box">
+            <h2>Ativação de Conta do Aluno</h2>
+            <p>Olá, <strong id="activation-student-name">Manuel Francisco Bento</strong>. Defina uma palavra-passe forte para ativar o seu acesso à Área Reservada do Aluno.</p>
+            
+            <div class="alert-box note-alert">
+                <i class="fas fa-shield-alt"></i>
+                <span>O link que utilizou contém um token JWT temporário. A sua conta ficará ativa de imediato após definir a sua password.</span>
+            </div>
+
+            <form id="form-definir-senha">
+                <input type="hidden" id="activation-student-id">
+                
+                <div class="form-group">
+                    <label for="act-password">Palavra-passe (Forte) *</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="act-password" required placeholder="Mínimo de 12 caracteres">
+                        <button type="button" class="btn-toggle-password" id="btn-toggle-act-pw"><i class="far fa-eye"></i></button>
+                    </div>
+                    
+                    <!-- Validador de Senha Forte em Tempo Real -->
+                    <div class="password-strength-checker" id="pw-strength-container">
+                        <p>Requisitos de Segurança:</p>
+                        <ul>
+                            <li id="req-length" class="invalid"><i class="far fa-circle"></i> Pelo menos 12 caracteres</li>
+                            <li id="req-upper" class="invalid"><i class="far fa-circle"></i> Letra maiúscula (A-Z)</li>
+                            <li id="req-lower" class="invalid"><i class="far fa-circle"></i> Letra minúscula (a-z)</li>
+                            <li id="req-number" class="invalid"><i class="far fa-circle"></i> Pelo menos um número (0-9)</li>
+                            <li id="req-symbol" class="invalid"><i class="far fa-circle"></i> Pelo menos um caractere especial (@$!%*?&)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="act-confirm-password">Confirmar Palavra-passe *</label>
+                    <input type="password" id="act-confirm-password" required placeholder="Repita a palavra-passe">
+                    <div id="pw-match-error" class="error-msg-span" style="display:none; color:#fc8181; margin-top:5px; font-size:0.9rem;">
+                        <i class="fas fa-exclamation-triangle"></i> As palavras-passes não coincidem.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-confirm-ativacao">Ativar Conta <i class="fas fa-check-double"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL DE DETALHES DE CURSO -->
+    <div id="modal-detalhes-curso" class="modal-curso-detalhes">
+        <div class="modal-content-custom glassmorphism course-details-box">
+            <button class="close-modal-btn" id="btn-fechar-modal-curso" aria-label="Fechar">&times;</button>
+            <div class="course-detail-header" id="course-detail-header-info">
+                <i class="fas fa-graduation-cap"></i>
+                <h2 id="cd-title">Curso</h2>
+                <p id="cd-code">Código</p>
+            </div>
+            
+            <div class="course-detail-body">
+                <h3>Perfil e Saídas Profissionais</h3>
+                <p id="cd-profile">Breve descrição do perfil de saídas...</p>
+                
+                <h3>Grade Curricular de Destaque</h3>
+                <div class="grid-curriculum" id="cd-curriculum-list">
+                    <!-- Dinâmico -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE SUBMISSÃO DE ARTIGO CIENTÍFICO -->
+    <div id="modal-submeter-artigo" class="modal-artigo">
+        <div class="modal-content-custom glassmorphism article-box">
+            <button class="close-modal-btn" id="btn-fechar-modal-artigo" aria-label="Fechar">&times;</button>
+            <h2>Submeter Artigo Científico</h2>
+            <p id="art-event-target">Simpósio de Tecnologias de Informação e Gestão</p>
+            
+            <form id="form-submeter-artigo-cientifico">
+                <input type="hidden" id="art-event-title-hidden">
+                
+                <div class="form-group">
+                    <label for="art-titulo">Título do Artigo / Resumo *</label>
+                    <input type="text" id="art-titulo" required placeholder="Ex: Impacto da IA na Auditoria de Contas">
+                </div>
+                
+                <div class="form-row-custom">
+                    <div class="form-group-custom">
+                        <label for="art-autor">Autor Principal *</label>
+                        <input type="text" id="art-autor" required placeholder="Nome Completo do Autor Principal">
+                    </div>
+                    <div class="form-group-custom">
+                        <label for="art-email">E-mail para Contacto *</label>
+                        <input type="email" id="art-email" required placeholder="Ex: autor.principal@gmail.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="art-coautores">Coautores (Opcional)</label>
+                    <input type="text" id="art-coautores" placeholder="Nomes dos coautores separados por vírgula">
+                </div>
+
+                <div class="form-group file-group-custom">
+                    <label for="file-artigo-pdf">
+                        <i class="fas fa-file-pdf"></i>
+                        <strong>Carregar Ficheiro Artigo (Apenas PDF) *</strong>
+                        <span>Selecione o PDF contendo o resumo ou artigo completo</span>
+                    </label>
+                    <input type="file" id="file-artigo-pdf" accept=".pdf" required>
+                    <div class="file-status" id="status-artigo-pdf">Nenhum ficheiro selecionado</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-confirm-submissao-artigo">Enviar Submissão <i class="fas fa-upload"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- NOTIFICAÇÃO TOAST GERAL -->
+    <div class="toast-notification" id="toast-notif">
+        <i class="fas fa-check-circle" id="toast-icon"></i>
+        <div class="toast-body">
+            <h4 id="toast-title">Título</h4>
+            <p id="toast-desc">Mensagem</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
